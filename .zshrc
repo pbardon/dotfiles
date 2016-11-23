@@ -1,5 +1,10 @@
+export PATH='/home/bardon/.rbenv/plugins/ruby-build/bin:/home/bardon/.rbenv/shims:/home/bardon/.rbenv/bin:/home/bardon/.nvm/versions/node/v4.2.3/bin:/home/bardon/sandbox/bardon-bigip-dev/devfs_x86_64/usr/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH'
+
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh	
+
+ZSH_THEME="bellshell"
 
 export EDITOR="vim"
 bindkey -v 
@@ -11,8 +16,6 @@ bindkey '^P' history-search-backward
 bindkey '^N' history-search-forward
 bindkey -e
 
-
-ZSH_THEME="bellshell"
 
 alias ls='ls --color=auto'
 
@@ -51,3 +54,5 @@ alias clientPaths='p4 client -o | grep -v "\-//" | grep -o "//\S*\.\.\. "'
 showDiskUsage() {
 	du -h --max-depth=1 | sort -hr
 }
+
+source $ZSH/oh-my-zsh.sh
